@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fecha y hora</string>
+    <string name="dmy">dd/mm/yyyy</string>
+    <string name="hm">hh:mm</string>
+    <string name="getdh">Obtener fecha y hora</string>
+    <string name="showDateTime">Mostrar Fecha y Hora</string>
+    <string name="otherPickers">Ver otros pickers</string>
+    <string name="back">Volver</string>
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/getdh"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="12dp" />
+
+
+    <EditText
+        android:id="@+id/showDateEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="@string/dmy"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/getTimeIBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginLeft="8dp" />
+
+    <EditText
+        android:id="@+id/showTimeEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/hm"
+        android:inputType="time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showDateEt"
+        android:layout_marginLeft="8dp" />
+
+    <ImageButton
+        android:id="@+id/getDateIBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="56dp"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/showDateEt"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        android:layout_marginLeft="57dp"
+        android:layout_marginRight="56dp" />
+
+    <ImageButton
+        android:id="@+id/getTimeIBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/ic_clock"
+        app:layout_constraintStart_toStartOf="@+id/getDateIBtn"
+        app:layout_constraintTop_toBottomOf="@+id/getDateIBtn"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/showDateTimeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/showDateTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showTimeEt"
+        tools:ignore="ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/changeActivityBtn"
+        android:layout_width="323dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/otherPickers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
